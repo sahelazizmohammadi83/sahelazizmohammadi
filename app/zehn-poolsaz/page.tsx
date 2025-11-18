@@ -1,39 +1,70 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
+import SearchBar from "../../components/SearchBar";
 import SocialLinks from "../../components/SocialLinks";
 
+// داده‌های پست‌ها
 const posts = [
-  { slug: "post-1", title: "ذهن پول‌ساز: درس اول", desc: "مبانی ذهنیت پول‌ساز و ثروت‌آفرینی." },
-  { slug: "post-2", title: "ذهن پول‌ساز: درس دوم", desc: "تمرین‌ها و تکنیک‌های عملی برای موفقیت." },
+  {
+    slug: "post-1",
+    title: "ذهن پول‌ساز: درس اول",
+    desc: "تقویت باورهای پول‌سازی و مسیر ذهنی موفقیت.",
+  },
+  {
+    slug: "post-2",
+    title: "ذهن پول‌ساز: درس دوم",
+    desc: "تمرین‌ها و تکنیک‌های عملی برای افزایش درآمد و قدرت ذهنی.",
+  },
 ];
 
-export default function ZehnMain() {
-  return (
-    <main className="max-w-3xl mx-auto py-8 px-4 text-center">
-      <h1 className="text-3xl sm:text-5xl font-bold text-[#096800] mb-8">ذهن پول‌ساز</h1>
+export default function ZehnPoolsazMain() {
+  const [filteredPosts, setFilteredPosts] = useState(posts);
 
-      <div className="flex flex-col gap-6">
-        {posts.map((post) => (
-          <div key={post.slug} className="flex flex-col items-center w-full">
-            <Link href={`/zehn-poolsaz/${post.slug}`} className="w-full sm:w-3/4">
-              <div className="bg-white border border-black rounded-xl p-4 sm:p-6 shadow-md
-                              cursor-pointer transition-all duration-300
-                              hover:shadow-2xl hover:-translate-y-1 hover:scale-105 text-center">
-                <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-[#096800]">
+  const handleSearch = (query: string) => {
+    const lower = query.toLowerCase();
+    setFilteredPosts(
+      posts.filter(
+        (post) =>
+          post.title.toLowerCase().includes(lower) ||
+          post.desc.toLowerCase().includes(lower)
+      )
+    );
+  };
+
+  return (
+    <main className="max-w-3xl mx-auto py-12 px-4 text-center">
+      {/* Search */}
+      <div className="mb-12 w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto">
+        <SearchBar onSearch={handleSearch} />
+      </div>
+
+      <h1 className="text-5xl font-bold text-[#096800] mb-12">ذهن پول‌ساز</h1>
+
+      <div className="space-y-6 mt-6">
+        {filteredPosts.length > 0 ? (
+          filteredPosts.map((post) => (
+            <Link key={post.slug} href={`/zehn-poolsaz/${post.slug}`}>
+              <div
+                className="bg-white border border-black rounded-xl p-8 shadow-md 
+                cursor-pointer transition-all duration-300 
+                hover:shadow-2xl hover:-translate-y-2 hover:scale-105 mx-auto text-center"
+              >
+                <h2 className="text-3xl font-bold mb-4 text-[#096800]">
                   {post.title}
                 </h2>
-                <p className="text-sm sm:text-base text-[#1E293B]">{post.desc}</p>
+                <p className="text-2xl text-[#1E293B]">{post.desc}</p>
               </div>
             </Link>
+          ))
+        ) : (
+          <p className="text-xl mt-12 text-[#334155]">هیچ پستی یافت نشد.</p>
+        )}
+      </div>
 
-            <div className="mt-4 w-full sm:w-3/4">
-              
-            </div>
-       
-          </div>
-        ))}
-  <SocialLinks />
+      <div className="mt-10">
+        <SocialLinks />
       </div>
     </main>
   );

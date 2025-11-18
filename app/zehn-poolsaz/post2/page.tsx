@@ -1,0 +1,21 @@
+"use client";
+
+import SocialLinks from "../../../components/SocialLinks";
+
+export default function Post2() {
+  const content =` تمرین‌ها و تکنیک‌های عملی برای افزایش درآمد و قدرت ذهنی.
+
+به صورت مرحله به مرحله انجام دهید.;`
+
+  return (
+    <main className="max-w-xl mx-auto p-6 text-center">
+      <h1 className="text-4xl font-bold mb-6 text-[#096800]">ذهن پول‌ساز: درس دوم</h1>
+      <p className="text-lg text-[#1E293B] leading-relaxed whitespace-pre-line mb-8">
+        {content}
+      </p>
+      <div className="mt-10">
+        <SocialLinks />
+      </div>
+    </main>
+  );
+}

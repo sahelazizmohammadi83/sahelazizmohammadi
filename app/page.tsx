@@ -40,20 +40,7 @@ export default function Home() {
         </div>
       </Link>
 
-      {/* کارت قانون جذب */}
-      <Link href="/jazb">
-        <div className="bg-white border border-black rounded-xl p-6 sm:p-8 mb-6 shadow-md
-                        cursor-pointer transition-all duration-300
-                        hover:shadow-2xl hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-105
-                        mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-3 sm:mb-4 text-[#9b07c0]">
-            قانون جذب
-          </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-[#8b0c8b]">
-            مسیر مخصوص آموزش‌ها و نکات جذب.
-          </p>
-        </div>
-      </Link>
+      
 
       {/* لینک شبکه‌های اجتماعی */}
       <div className="mt-6 sm:mt-8 md:mt-10">
