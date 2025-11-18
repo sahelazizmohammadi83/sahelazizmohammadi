@@ -1,5 +1,5 @@
 "use client";
-
+import SocialLinks from "../../../components/SocialLinks";
 export default function Post1() {
   const post = {
     title: "شروع برنامه‌نویسی",
@@ -23,7 +23,7 @@ export default function Post1() {
 
       {/* Social Links */}
       <div className="mt-8">
-
+<SocialLinks />
       </div>
     </main>
   );

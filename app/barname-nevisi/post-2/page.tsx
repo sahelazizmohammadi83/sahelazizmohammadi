@@ -1,5 +1,5 @@
 "use client";
-
+import SocialLinks from "../../../components/SocialLinks";
 export default function Post2() {
   const title = "برنامه‌نویسی پروژه‌محور: درس دوم";
 
@@ -18,6 +18,7 @@ export default function Post2() {
 
       <div className="mt-6 w-full sm:w-3/4 mx-auto">
         
+       <SocialLinks />  
       </div>
     </main>
   );
