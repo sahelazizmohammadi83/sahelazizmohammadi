@@ -63,9 +63,9 @@ export default function ZehnPoolsazMain() {
         )}
       </div>
 
-      <div className="mt-10">
-        <SocialLinks />
-      </div>
+      <div className="mt-[1cm]">
+  <SocialLinks />
+</div>
     </main>
   );
 }

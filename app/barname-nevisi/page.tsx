@@ -72,7 +72,10 @@ export default function BarnameNevisiMain() {
           <p className="text-xl mt-12 text-[#334155]">هیچ پستی یافت نشد.</p>
         )}
       </div>
+      <div className="mt-[1cm]">
   <SocialLinks />
+</div>
+  
     </main>
   );
 }

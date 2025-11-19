@@ -13,9 +13,9 @@ export default function Post2() {
       <p className="text-lg text-[#1E293B] leading-relaxed whitespace-pre-line mb-8">
         {content}
       </p>
-      <div className="mt-10">
-        <SocialLinks />
-      </div>
+      <div className="mt-[1cm]">
+  <SocialLinks />
+</div>
     </main>
   );
 }

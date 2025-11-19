@@ -9,13 +9,13 @@ export default function SocialLinks() {
       <Link href="https://t.me/sahelazizmohammadi" target="_blank"
       
       className="text-[#1a9eeb] hover:underline">
-        کانال تلگرام
+       برای تمرین های عالی و رایگان بیا اینجا=تلگرام
       </Link>
-      <Link href="https://www.instagram.com/yourprofile" target="_blank" className="text-[#a53e9c] hover:underline">
-        پیج اینستا
+      <Link href="https://www.instagram.com/sahelazizm" target="_blank" className="text-[#a53e9c] hover:underline">
+       برای راهکارهای سریع و خفن بیااینجا=اینستگرام
       </Link>
-      <Link href="https://www.youtube.com/yourchannel" target="_blank" className="text-[#fd0c0c] hover:underline">
-        یوتیوب
+      <Link href="https://youtube.com/@sahelazizm?si=VOpO5nx4-eStb_OM" target="_blank" className="text-[#fd0c0c] hover:underline">
+        برای دیدن آموزش های رایگان و پروژه محور بیااینجا=یوتیوب
       </Link>
     </div>
   );

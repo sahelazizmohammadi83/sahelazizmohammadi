@@ -17,8 +17,10 @@ export default function Post2() {
       </p>
 
       <div className="mt-6 w-full sm:w-3/4 mx-auto">
-        
-       <SocialLinks />  
+      <div className="mt-[1cm]">
+  <SocialLinks />
+</div>
+         
       </div>
     </main>
   );

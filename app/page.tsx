@@ -44,7 +44,10 @@ export default function Home() {
 
       {/* لینک شبکه‌های اجتماعی */}
       <div className="mt-6 sm:mt-8 md:mt-10">
-        <SocialLinks />
+        
+        <div className="mt-[1cm]">
+  <SocialLinks />
+</div>
       </div>
     </main>
   );

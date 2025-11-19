@@ -22,8 +22,9 @@ export default function Post1() {
       </p>
 
       {/* Social Links */}
-      <div className="mt-8">
-<SocialLinks />
+      <div className="mt-[1cm]">
+  <SocialLinks />
+
       </div>
     </main>
   );
