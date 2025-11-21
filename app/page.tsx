@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="max-w-full sm:max-w-xl md:max-w-2xl mx-auto px-4 sm:px-6 md:px-8 text-center">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1E293B] mb-12 sm:mb-16">
-        بخش‌های اصلی سایت
+        سلام به سایت ساحل عزیزمحمدی خوش آمدید
       </h1>
 
       {/* کارت برنامه‌نویسی */}
@@ -20,7 +20,7 @@ export default function Home() {
             برنامه‌نویسی
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-[#092bc4]">
-            آموزش‌های پروژه‌محور برای ورود به بازار کار.
+            اطلاعات و آموزش های برنامه نویسی
           </p>
         </div>
       </Link>

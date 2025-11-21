@@ -1,3 +1,12 @@
+/* 1️⃣ ابتدا فونت رو import کن */
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn/Vazirmatn-font-face.css');
+
+/* 2️⃣ بعد دستورات Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 3️⃣ سپس سبک‌های سفارشی */
+body {
+  font-family: 'Vazirmatn', sans-serif;
+}

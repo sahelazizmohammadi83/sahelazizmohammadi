@@ -3,10 +3,7 @@
 import SocialLinks from "../../../components/SocialLinks";
 
 export default function Post1() {
-  const content = `ر این درس با تقویت باورهای پول‌سازی و ذهنیت موفقیت آشنا می‌شوید.
-
-تمرین‌ها را به دقت دنبال کنید.;`
-
+  const content = ``
   return (
     <main className="max-w-xl mx-auto p-6 text-center">
       <h1 className="text-4xl font-bold mb-6 text-[#096800]">ذهن پول‌ساز: درس اول</h1>
