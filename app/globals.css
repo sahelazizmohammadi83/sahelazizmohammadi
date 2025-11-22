@@ -1,12 +1,18 @@
-/* 1️⃣ ابتدا فونت رو import کن */
 @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn/Vazirmatn-font-face.css');
 
-/* 2️⃣ بعد دستورات Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 3️⃣ سپس سبک‌های سفارشی */
+/* فونت وزیری برای متن بدنه */
+
+
 body {
   font-family: 'Vazirmatn', sans-serif;
+}
+
+/* متن بدنه کمی کوچکتر از حالت عادی */
+.prose {
+  font-size: 0.90rem; /* کمی کوچکتر */
+  line-height: 1.7;   /* فاصله بین خطوط مناسب */
 }

@@ -6,9 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // اضافه کردن فونت ساحل
       fontFamily: {
-        sans: ['Vazirmatn', 'ui-sans-serif', 'system-ui'], // فونت اصلی برای متن‌ها
-        heading: ['Vazirmatn', 'ui-sans-serif', 'system-ui'], // فونت جدا برای تیترها اگر بخوای کلاس جدا داشته باشه
+        sahel: ["Sahel", "sans-serif"],
+      },
+
+      // تنظیم فاصله دو سانتی در کل سایت (تقریبی 32px)
+      spacing: {
+        "2cm": "2cm",
       },
     },
   },
