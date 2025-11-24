@@ -16,6 +16,17 @@ const posts = [
     title: " فریم ورک نکست چیست  ",
     desc: " آشنایی با مفاهیم پایه و کاربرد های نکست",
   },
+  {
+    slug: "post-3",
+    title: "اهمیت هدر در سایت چیست؟",
+    desc: "فواید هدر در سایت",
+  },
+   {
+    slug: "post-4",
+    title: "انواع سبک سایت های مختلف",
+    desc: "برای ایده گرفتن موضوع سایت جدیدت",
+  }
+
 ];
 
 export default function BarnameNevisiMain() {
