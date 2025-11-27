@@ -9,13 +9,13 @@ import SocialLinks from "../../components/SocialLinks";
 const posts = [
   {
     slug: "post-1",
-    title: "ذهن پول‌ساز: درس اول",
-    desc: "تقویت باورهای پول‌سازی و مسیر ذهنی موفقیت.",
+    title: "قانون جذب : درس اول",
+    desc: "تقویت باورهای ذهنی و  موفقیت.",
   },
   {
     slug: "post-2",
-    title: "ذهن پول‌ساز: درس دوم",
-    desc: "تمرین‌ها و تکنیک‌های عملی برای افزایش درآمد و قدرت ذهنی.",
+    title: "قانون جذب : درس دوم",
+    desc: "تمرین‌ها و تکنیک‌های عملی برای قدرت ذهنی.",
   },
 ];
 
@@ -40,21 +40,21 @@ export default function ZehnPoolsazMain() {
         <SearchBar onSearch={handleSearch} />
       </div>
 
-      <h1 className="text-5xl font-bold text-[#096800] mb-12">ذهن پول‌ساز</h1>
+      <h1 className="text-5xl font-bold text-[#5a0a80] mb-12"> قانون جذب</h1>
 
       <div className="space-y-6 mt-6">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post) => (
-            <Link key={post.slug} href={`/zehn-poolsaz/${post.slug}`}>
+            <Link key={post.slug} href={`/jazb/${post.slug}`}>
               <div
                 className="bg-white border border-black rounded-xl p-8 shadow-md 
                 cursor-pointer transition-all duration-300 
                 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 mx-auto text-center"
               >
-                <h2 className="text-3xl font-bold mb-4 text-[#096800]">
+                <h2 className="text-3xl font-bold mb-4 text-[#99078d]">
                   {post.title}
                 </h2>
-                <p className="text-2xl text-[#1E293B]">{post.desc}</p>
+                <p className="text-2xl text-[#450957]">{post.desc}</p>
               </div>
             </Link>
           ))
