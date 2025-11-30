@@ -9,12 +9,12 @@ import SocialLinks from "../../components/SocialLinks";
 const posts = [
   {
     slug: "post-1",
-    title: "قانون جذب : درس اول",
+    title: "خودسازی و ذهنیت  : درس اول",
     desc: "تقویت باورهای ذهنی و  موفقیت.",
   },
   {
     slug: "post-2",
-    title: "قانون جذب : درس دوم",
+    title: "خودسازی وذهنیت  : درس دوم",
     desc: "تمرین‌ها و تکنیک‌های عملی برای قدرت ذهنی.",
   },
 ];
@@ -40,12 +40,12 @@ export default function ZehnPoolsazMain() {
         <SearchBar onSearch={handleSearch} />
       </div>
 
-      <h1 className="text-5xl font-bold text-[#5a0a80] mb-12"> قانون جذب</h1>
+      <h1 className="text-5xl font-bold text-[#5a0a80] mb-12"> خودسازی وذهنیت</h1>
 
       <div className="space-y-6 mt-6">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post) => (
-            <Link key={post.slug} href={`/jazb/${post.slug}`}>
+            <Link key={post.slug} href={`/zehn/${post.slug}`}>
               <div
                 className="bg-white border border-black rounded-xl p-8 shadow-md 
                 cursor-pointer transition-all duration-300 

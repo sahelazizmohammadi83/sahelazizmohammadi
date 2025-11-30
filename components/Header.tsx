@@ -9,7 +9,7 @@ export default function Header() {
   <span>|</span>  {/* ← درست */}
   <Link href="/barname-nevisi">برنامه‌نویسی</Link>
   <span>|</span>
-  <Link href="/jazb">قانون جذب</Link>
+  <Link href="zehn"> خودسازی وذهنیت</Link>
 </header>
   );
 }
