@@ -1,21 +1,20 @@
 "use client";
 
-import Link from "next/link";
+import { FaTelegramPlane, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function SocialLinks() {
   return (
-    <div className="flex flex-col items-center mt-4 mb-6" style={{ gap: "16px" }}>
-    
-      <Link href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" 
- className="text-[#1a9eeb] hover:underline">
-  برای تمرین های عالی و رایگان با ف.یلتر شک.ن  بیا اینجا=تلگرام
-</Link>
-      <Link href="https://www.instagram.com/sahelazizm" target="_blank" className="text-[#a53e9c] hover:underline">
-       برای راهکارهای سریع و خفن بیااینجا=اینستگرام
-      </Link>
-      <Link href="https://youtube.com/@sahelazizm?si=VOpO5nx4-eStb_OM" target="_blank" className="text-[#fd0c0c] hover:underline">
-        برای دیدن آموزش های رایگان و پروژه محور بیااینجا=یوتیوب
-      </Link>
+    <div className="flex justify-center gap-[1rem] mt-6">
+      <a href="https://t.me/username" target="_blank" rel="noopener noreferrer"
+      className="mx-3.5">
+        <FaTelegramPlane size={40} className="text-[#03afff] w-20 h-20 hover:text-[#0331ff] transition-colors"/>
+      </a>
+      <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
+        <FaInstagram  size={40} className="text-[#e203ff] w-20 h-20 hover:text-[#ff0381] transition-colors"/>
+      </a>
+      <a href="https://youtube.com/username" target="_blank" rel="noopener noreferrer">
+        <FaYoutube size={40} className="text-[#ff0318]  hover:text-[#d11818] transition-colors"/>
+      </a>
     </div>
   );
 }
