@@ -4,7 +4,7 @@ import { FaTelegramPlane, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function SocialLinks() {
   return (
-    <div className="flex justify-center gap-[1rem] mt-6">
+    <div className="flex justify-center gap-[1cm] mt-6">
       <a href="https://t.me/username" target="_blank" rel="noopener noreferrer"
       className="mx-3.5">
         <FaTelegramPlane size={40} className="text-[#03afff] w-20 h-20 hover:text-[#0331ff] transition-colors"/>
