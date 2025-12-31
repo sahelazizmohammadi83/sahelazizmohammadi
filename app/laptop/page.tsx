@@ -45,7 +45,7 @@ export default function ZehnPoolsazMain() {
       <div className="space-y-6 mt-6">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post) => (
-            <Link key={post.slug} href={`/zehn/${post.slug}`}>
+            <Link key={post.slug} href={`/laptop/${post.slug}`}>
               <div
                 className="bg-white border border-black rounded-xl p-8 shadow-md 
                 cursor-pointer transition-all duration-300 

@@ -33,7 +33,7 @@ export default function Header() {
             <FaLaptop className="text-2xl" />
             <span className="text-sm mt-1">لپ‌تاپ |</span>
           </Link>
-          <Link href="/computer" className="flex flex-col items-center gap-2 text-[#03080f] hover:text-[#0331ff] transition">
+          <Link href="/computer" className="flex flex-col items-center gap-2 text-[#06347c] hover:text-[#0331ff] transition">
             <FaDesktop className="text-2xl" />
             <span className="text-sm mt-1">کامپیوتر</span>
           </Link>
