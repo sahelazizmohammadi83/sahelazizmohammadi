@@ -55,6 +55,9 @@ export default function Home() {
           <SwiperSlide className="w-[14rem] sm:w-[18rem] md:w-[20rem] h-[10rem] sm:h-[12rem] md:h-[15rem]">
             <div className="bg-[#ffffff] border border-[#60a5fa] rounded-[2rem] p-4 sm:p-6 md:p-8 shadow-lg text-center">
               <p className="text-sm sm:text-base md:text-lg text-[#334155]">راهنمای خرید گوشی متوسط</p>
+              <div className="w-[18rem] h-[50rem] sm:w-[18rem] sm:h-[14rem] md:w-[32rem] md:h-[18rem] lg:w-[50rem] lg:h-[18rem]">
+                <Image src="/images/iphonvs.jpg" alt="مقایسه" fill className="w-full h-full object-cover" />
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>
@@ -67,16 +70,16 @@ export default function Home() {
           <SwiperSlide className="w-[14rem] sm:w-[18rem] md:w-[20rem] h-[10rem] sm:h-[12rem] md:h-[15rem]">
             <div className="bg-[#ffffff] border border-[#60a5fa] rounded-[2rem] p-4 sm:p-6 md:p-8 shadow-lg text-center">
               <p className="text-sm sm:text-base md:text-lg text-[#334155]">مقایسه گوشی A و B</p>
-              <div className="w-[18rem] h-[50rem] sm:w-[24rem] sm:h-[14rem] md:w-[32rem] md:h-[18rem] lg:w-[50rem] lg:h-[18rem]">
-                <Image src="/images/iphonvs.jpg" alt="مقایسه" fill className="object-cover" />
+              <div className="w-[18rem] h-[50rem] sm:w-[18rem] sm:h-[14rem] md:w-[32rem] md:h-[18rem] lg:w-[50rem] lg:h-[18rem]">
+                <Image src="/images/iphonvs.jpg" alt="مقایسه" fill className="w-full h-full object-cover" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="w-[14rem] sm:w-[18rem] md:w-[20rem] h-[10rem] sm:h-[12rem] md:h-[15rem]">
             <div className="bg-[#ffffff] border border-[#60a5fa] rounded-[2rem] p-4 sm:p-6 md:p-8 shadow-lg text-center">
               <p className="text-sm sm:text-base md:text-lg text-[#334155]">مقایسه گوشی C و D</p>
-              <div className="w-[18rem] h-[50rem] sm:w-[24rem] sm:h-[14rem] md:w-[32rem] md:h-[18rem] lg:w-[50rem] lg:h-[18rem]">
-                <Image src="/images/a5636.jpg" alt="مقایسه" fill className="object-cover" />
+              <div className="w-[18rem] h-[50rem] sm:w-[18rem] sm:h-[14rem] md:w-[32rem] md:h-[18rem] lg:w-[50rem] lg:h-[18rem]">
+                <Image src="/images/a5636.jpg" alt="مقایسه" fill className="w-full h-full object-cover" />
               </div>
             </div>
           </SwiperSlide>
