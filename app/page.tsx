@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -67,32 +67,44 @@ export default function Home() {
           <SwiperSlide className="w-[14rem] sm:w-[18rem] md:w-[20rem] h-[10rem] sm:h-[12rem] md:h-[15rem]">
             <div className="bg-[#ffffff] border border-[#60a5fa] rounded-[2rem] p-4 sm:p-6 md:p-8 shadow-lg text-center">
               <p className="text-sm sm:text-base md:text-lg text-[#334155]">مقایسه گوشی A و B</p>
+              <div className="w-[18rem] h-[50rem] sm:w-[24rem] sm:h-[14rem] md:w-[32rem] md:h-[18rem] lg:w-[50rem] lg:h-[18rem]">
+                <Image src="/images/iphonvs.jpg" alt="مقایسه" fill className="object-cover" />
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="w-[14rem] sm:w-[18rem] md:w-[20rem] h-[10rem] sm:h-[12rem] md:h-[15rem]">
             <div className="bg-[#ffffff] border border-[#60a5fa] rounded-[2rem] p-4 sm:p-6 md:p-8 shadow-lg text-center">
               <p className="text-sm sm:text-base md:text-lg text-[#334155]">مقایسه گوشی C و D</p>
+              <div className="w-[18rem] h-[50rem] sm:w-[24rem] sm:h-[14rem] md:w-[32rem] md:h-[18rem] lg:w-[50rem] lg:h-[18rem]">
+                <Image src="/images/a5636.jpg" alt="مقایسه" fill className="object-cover" />
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>
       </section>
+{/* ---------- درباره من و ارتباط با ما ---------- */}
+<section className="bg-[#e0f2fe] py-12 px-6 sm:px-12 md:px-24">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    {/* درباره من */}
+    <div className="bg-white border border-[#60a5fa] p-8 rounded-2xl shadow-lg text-center">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[#1E3A8A]">درباره من</h2>
+      <p className="text-base sm:text-lg text-[#334155]">
+        من ساحل عزیزمحمدی هستم، طراح و برنامه‌نویس عاشق تکنولوژی. تجربه من شامل طراحی وب، اپلیکیشن و آموزش برنامه‌نویسی است.
+      </p>
+    </div>
 
-      {/* بخش معرفی خودت */}
-      <section className="mb-[2rem]">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-[#1E3A8A]">درباره من</h2>
-        <div className="bg-[#ffffff] border border-[#60a5fa] p-4 sm:p-6 md:p-8 shadow-lg">
-          <p className="text-sm sm:text-base md:text-lg text-[#334155]">
-            من ساحل عزیزمحمدی هستم، طراح و برنامه‌نویس عاشق تکنولوژی.
-          </p>
-        </div>
-      </section>
+    {/* ارتباط با ما */}
+    <div className="bg-white border border-[#60a5fa] p-8 rounded-2xl shadow-lg text-center">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[#1E3A8A]">ارتباط با ما</h2>
+      <p className="text-base sm:text-lg text-[#334155] mb-6">
+        برای ارتباط با من می‌توانید از شبکه‌های اجتماعی زیر استفاده کنید:
+      </p>
+      <SocialLinks />
+    </div>
 
-      {/* ارتباط با ما + سوشال لینک */}
-      <section className="mb-[2rem]">
-        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-[1rem] text-[#1E3A8A]">ارتباط با ما</h2>
-        <SocialLinks />
-      </section>
-
+  </div>
+</section>
     </main>
   );
 }
