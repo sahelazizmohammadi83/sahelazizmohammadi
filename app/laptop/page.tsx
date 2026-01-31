@@ -10,7 +10,7 @@ const posts = [
     slug: "post-1",
     title: "جاوا اسکریپت چیست؟",
     desc: "آشنایی با مفاهیم پایه و کاربرد های جاوا اسکریپت",
-    image: "/images/js.jpg",
+    image: "/images/a5636.jpg",
   },
   {
     slug: "post-2",
