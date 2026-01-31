@@ -8,25 +8,28 @@ import SocialLinks from "../../components/SocialLinks";
 const posts = [
   {
     slug: "post-1",
-    title: " جاوا اسکریپت چیست؟  ",
+    title: "جاوا اسکریپت چیست؟",
     desc: "آشنایی با مفاهیم پایه و کاربرد های جاوا اسکریپت",
+    image: "/images/js.jpg",
   },
   {
     slug: "post-2",
-    title: " فریم ورک نکست چیست  ",
-    desc: " آشنایی با مفاهیم پایه و کاربرد های نکست",
+    title: "فریم ورک نکست چیست؟",
+    desc: "آشنایی با مفاهیم پایه و کاربرد های نکست",
+    image: "/images/next.jpg",
   },
   {
     slug: "post-3",
     title: "اهمیت هدر در سایت چیست؟",
     desc: "فواید هدر در سایت",
+    image: "/images/header.jpg",
   },
-   {
+  {
     slug: "post-4",
     title: "انواع سبک سایت های مختلف",
     desc: "برای ایده گرفتن موضوع سایت جدیدت",
-  }
-
+    image: "/images/design.jpg",
+  },
 ];
 
 export default function BarnameNevisiMain() {
@@ -44,10 +47,10 @@ export default function BarnameNevisiMain() {
   };
 
   return (
-    <main className="max-w-3xl mx-auto py-12 px-4 text-center">
+    <main className="max-w-4xl mx-auto py-12 px-4 text-center">
 
-      {/* Search Bar */}
-      <div className="mb-12 w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto">
+      {/* Search */}
+      <div className="mb-12 max-w-md mx-auto">
         <SearchBar onSearch={handleSearch} />
       </div>
 
@@ -55,38 +58,39 @@ export default function BarnameNevisiMain() {
         برنامه‌نویسی
       </h1>
 
-      <div className="space-y-6 mt-6">
-        {filteredPosts.length > 0 ? (
-          filteredPosts.map((post) => (
-            <div key={post.slug} className="flex flex-col items-center">
-              <Link href={`/laptop/${post.slug}`} className="w-full sm:w-3/4">
-                <div
-                  className="bg-white border border-black rounded-xl p-6 sm:p-8 shadow-md
-                  cursor-pointer transition-all duration-300
-                  hover:shadow-2xl hover:-translate-y-2 hover:scale-105
-                  mx-auto text-center"
-                >
-                  <h2 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-4 text-[#011779]">
-                    {post.title}
-                  </h2>
-                  <p className="text-base sm:text-2xl text-[#1027fa]">{post.desc}</p>
-                </div>
-              </Link>
+      <div className="space-y-10">
+        {filteredPosts.map((post) => (
+          <div key={post.slug} className="flex justify-center">
+            <Link href={`/laptop/${post.slug}`} className="w-full max-w-xl">
+              <div
+                className="bg-white border rounded-2xl p-6 shadow-md
+                transition-all duration-300 cursor-pointer
+                hover:shadow-2xl hover:-translate-y-2"
+              >
+                {/* Image */}
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  loading="lazy"
+                  className="w-full max-w-sm mx-auto rounded-xl object-cover mb-6"
+                />
 
-              {/* SocialLinks زیر هر پست */}
-              <div className="mt-4 w-full sm:w-3/4">
-
-              </div> 
-            </div>
-          ))
-        ) : (
-          <p className="text-xl mt-12 text-[#334155]">هیچ پستی یافت نشد.</p>
-        )}
+                {/* Text */}
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#011779]">
+                  {post.title}
+                </h2>
+                <p className="text-base sm:text-xl text-[#1027fa]">
+                  {post.desc}
+                </p>
+              </div>
+            </Link>
+          </div>
+        ))}
       </div>
-      <div className="mt-[1cm]">
-  <SocialLinks />
-</div>
-  
+
+      <div className="mt-16">
+        <SocialLinks />
+      </div>
     </main>
   );
 }
