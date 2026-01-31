@@ -3,37 +3,50 @@
 import SocialLinks from "../../../components/SocialLinks";
 
 export default function Post1() {
-  const content =`hbdjjgglnlkpsjgipwtjipjwsjkrlhktjpiejfishjeksdfkjxjptioujpirupejgkj;jferj"qirhj`;
+  const content = 
+`اینجا متن پستت رو می‌نویسی.
+ریسپانسیو واقعی.`
 
-  // مسیر تصویر: میتونی هر عکس دلخواه بذاری داخل public/images
-  const image = "/images/a1620.jpg";
+;
 
   return (
-    <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* عنوان */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-center text-[#b00ff0]">
-        خودسازی و ذهنیت: درس اول
-      </h1>
+    <main className="w-full mx-auto px-4 py-10 text-center">
 
-      {/* تصویر */}
-      {image && (
-        <div className="mb-6 w-full flex justify-center">
-          <img
-            src={image}
-            alt="خودسازی و ذهنیت"
-            className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 h-auto object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
-          />
+      {/* کانتینر دسکتاپ */}
+      <div className="mx-auto max-w-xl">
+
+        {/* تصویر */}
+        <img
+          src="/images/a1620.jpg"
+          alt="Post image"
+          className="
+            w-full
+            rounded-2xl
+            shadow-md
+            mb-8
+          "
+        />
+
+        {/* عنوان */}
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-[#b00ff0]">
+          خودسازی و ذهنیت: درس اول
+        </h1>
+
+        {/* متن */}
+        <p className="
+          text-base
+          sm:text-lg
+          text-[#1E293B]
+          leading-relaxed
+          whitespace-pre-line
+        ">
+          {content}
+        </p>
+
+        <div className="mt-12">
+          <SocialLinks />
         </div>
-      )}
 
-      {/* متن */}
-      <p className="text-base sm:text-lg md:text-xl text-[#1E293B] leading-relaxed whitespace-pre-line mb-8">
-        {content}
-      </p>
-
-      {/* Social Links */}
-      <div className="flex justify-center mt-8">
-        <SocialLinks />
       </div>
     </main>
   );
