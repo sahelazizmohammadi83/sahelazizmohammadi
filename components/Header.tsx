@@ -35,7 +35,7 @@ export default function Header() {
           </Link>
           <Link href="/computer" className="flex flex-col items-center gap-2 text-[#06347c] hover:text-[#0331ff] transition">
             <FaDesktop className="text-2xl" />
-            <span className="text-sm mt-1">کامپیوتر</span>
+            <span className="text-sm mt-1">راهکار ها</span>
           </Link>
         </nav>
 
@@ -46,7 +46,7 @@ export default function Header() {
       {/* منو بازشو */}
       {menuOpen && (
   <div
-    className="fixed top-0 left-0 w-[7cm] h-[40cm] bg-[#dee3ee] z-50 flex flex-col items-start justify-start gap-[1cm] p-4 rounded-lg"
+    className="fixed top-0 left-0 w-[7cm] h-[40cm] bg-[#ffffff] z-50 flex flex-col items-start justify-start gap-[1cm] p-4 rounded-lg"
   >
     <Link
       href="/"
@@ -67,7 +67,7 @@ export default function Header() {
       onClick={() => setMenuOpen(false)}
       className="flex items-center gap-[0.2cm] text-[#f5a623] hover:text-[#ffce54] transition-colors"
     >
-      <FaDesktop /> کامپیوتر
+      <FaDesktop /> راهکار ها
     </Link>
     <Link
       href="/mobile"
