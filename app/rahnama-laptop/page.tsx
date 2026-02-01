@@ -59,7 +59,7 @@ export default function BarnameNevisiMain() {
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post) => (
             <div key={post.slug} className="flex flex-col items-center">
-              <Link href={`/barname-nevisi/${post.slug}`} className="w-full sm:w-3/4">
+              <Link href={`/rahnama-laptop/${post.slug}`} className="w-full sm:w-3/4">
                 <div
                   className="bg-white border border-black rounded-xl p-6 sm:p-8 shadow-md
                   cursor-pointer transition-all duration-300

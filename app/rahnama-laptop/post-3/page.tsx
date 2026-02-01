@@ -1,114 +1,70 @@
 "use client";
+
 import SocialLinks from "../../../components/SocialLinks";
-export default function Post3() {
-  const post = {
-    title: "جاوا اسکریپت چیست",
-    content: `هدر (Header) یکی از مهم‌ترین بخش‌های هر سایت
- است، چون اولین چیزی است که کاربر می‌بیند و معمولاً
- نقش اصلی در راهنمایی، برندینگ و تجربه کاربری دارد.
-در ادامه کاملاً ساده، دقیق و مفصل توضیح می‌دهم:
 
-اهمیت هدر در سایت چیست؟
-۱. اولین چیزی است که کاربر می‌بیند
- 
-(First Impression)
-هدر مثل چهره‌ی سایت است.
-کاربر با دیدن هدر تصمیم می‌گیرد که:
-• سایت حرفه‌ای است یا نه
-• ادامه بماند یا سایت را ببندد
-• مسیرش را چگونه پیدا کند
-پس تاثیر مستقیم روی اعتماد، ماندگاری 
-و احساس کاربر دارد.
+export default function Post1() {
+  return (
+    <main className="w-full mx-auto px-4 py-10 text-center">
+      {/* کانتینر */}
+      <div className="mx-auto max-w-xl">
 
-۲. راهنمای اصلی کاربر برای پیدا کردن
- بخش‌های سایت
-هدر معمولاً شامل:
-• منو (Home, Blog, Courses, About…)
-• سرچ
-• لوگو
-• دکمه‌های مهم (ورود/ثبت‌نام، خرید، تماس)
-کاربر اولین مکانی که برای پیدا کردن صفحات مهم نگاه
- می‌کند هدر است.
-پس هدر نقش GPS سایت را دارد.
+        {/* تصویر */}
+        <img
+          src="/images/a1620.jpg"
+          alt="Post image"
+          className="w-full rounded-2xl shadow-md mb-8"
+        />
 
-۳. برندینگ و هویت سایت
-وجود:
-• لوگو
-• رنگ سازمانی
-• فونت اصلی
-• پیام یا شعار کوتاه
-در هدر باعث می‌شود کاربر:
-• برند شما را به خاطر بسپارد
-• حس اعتماد و حرفه‌ای بودن بگیرد
-• بداند کجاست و چه سایتی را باز کرده
-هدر به نوعی امضای سایت است.
+        {/* عنوان */}
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-[#b00ff0]">
+          خودسازی و ذهنیت: درس اول
+        </h1>
 
-۴. تقویت تجربه کاربری (UX)
-هدر خوب باعث می‌شود:
-• کاربر گم نشود
-• سریع به هدفش برسد
-• احساس کند سایت ساده و قابل اعتماد است
-در UX یک قانون معروف داریم:
-چیزی که کاربر زیاد استفاده می‌کند باید در دید باشد →
- هدر بهترین مکان است.
+        {/* متن پست */}
+        <p className="text-base sm:text-lg text-[#1E293B] leading-relaxed mb-8 whitespace-pre-line">
+          اینجا متن پستت رو می‌نویسی.
+          {"\n"}
+          ریسپانسیو واقعی.
+          {"\n\n"}
+          در ادامه یک جدول نمونه می‌بینی:
+        </p>
 
-۵. اهمیت در موبایل (Responsive هدر)
-در موبایل هدر باید:
-• ساده
-• جمع‌وجور
-• منوی همبرگری داشته باشد
-هادر درست باعث می‌شود کاربر موبایل تجربه بهتری
- داشته باشد، چون بالای صفحه همیشه قابل دسترس
- است.
- 
-۶. تاثیر در سئو (به‌صورت غیرمستقیم)
-هدر به‌طور مستقیم سئو را افزایش نمی‌دهد،
-اما رفتار کاربر روی سایت را به شدت بهتر می‌کند:
-• کاربر راحت‌تر صفحه‌ها را پیدا می‌کند
-• مدت بیشتری در سایت می‌ماند
-• کمتر سردرگم می‌شود
-این‌ها همه سیگنال‌های مثبت به گوگل هستند
-→ پس هدر خوب = سئو بهتر (غیرمستقیم)
+        {/* جدول */}
+        <div className="overflow-x-auto mb-12">
+          <table className="w-full border border-gray-300 rounded-lg overflow-hidden text-sm sm:text-base">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="border px-4 py-2">ویژگی</th>
+                <th className="border px-4 py-2">سطح ضعیف</th>
+                <th className="border px-4 py-2">سطح قوی</th>
+              </tr>
+            </thead>
 
-۷. قرار دادن CTA (دعوت به عمل)
+            <tbody>
+              <tr>
+                <td className="border px-4 py-2">تمرکز</td>
+                <td className="border px-4 py-2">پراکنده</td>
+                <td className="border px-4 py-2">عمیق</td>
+              </tr>
 
-هدر بهترین جای:
-• دکمه ثبت‌نام
-• دکمه خرید
-• CTA مهم دوره‌ها
-• لینک سریع به محصولات
-است.
-این باعث افزایش فروش و تبدیل (Conversion) می‌شود.
+              <tr className="bg-gray-50">
+                <td className="border px-4 py-2">انگیزه</td>
+                <td className="border px-4 py-2">موقت</td>
+                <td className="border px-4 py-2">پایدار</td>
+              </tr>
 
-جمع‌بندی خیلی کوتاه:
+              <tr>
+                <td className="border px-4 py-2">نتیجه</td>
+                <td className="border px-4 py-2">نیمه‌کاره</td>
+                <td className="border px-4 py-2">موفق</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-هدر اهمیت دارد چون:
-• اولین برداشت کاربر را می‌سازد
-• راهنمای اصلی سایت است
-• برند را معرفی می‌کند
-• تجربه کاربری را بهتر می‌کند
-• روی سئو اثر غیرمستقیم دارد
-• محل مناسب CTA و دکمه‌های مهم است `
-
-    };
-    
-      return (
-        <main className="max-w-xl mx-auto p-6 text-center">
-          {/* عنوان پست */}
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-[#0331ff]">
-            {post.title}
-          </h1>
-    
-          {/* محتوای پست */}
-          <p className="text-base sm:text-lg text-[#1E293B] leading-relaxed whitespace-pre-line mb-8">
-            {post.content}
-          </p>
-    
-          {/* Social Links */}
-          <div className="mt-[1cm]">
-      <SocialLinks />
-    
-          </div>
-        </main>
-      );
-    }
+        {/* سوشال */}
+        <SocialLinks />
+      </div>
+    </main>
+  );
+}

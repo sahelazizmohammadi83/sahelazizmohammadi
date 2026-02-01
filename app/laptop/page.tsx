@@ -67,13 +67,8 @@ export default function BarnameNevisiMain() {
                 transition-all duration-300 cursor-pointer
                 hover:shadow-2xl hover:-translate-y-2"
               >
-                {/* Image */}
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  loading="lazy"
-                  className="w-full max-w-sm mx-auto rounded-xl object-cover mb-6"
-                />
+
+
 
                 {/* Text */}
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[#011779]">
@@ -82,6 +77,16 @@ export default function BarnameNevisiMain() {
                 <p className="text-base sm:text-xl text-[#1027fa]">
                   {post.desc}
                 </p>
+                {/* Image */}
+                <img
+                  alt={post.title}
+                  src={post.image}
+                  
+                  loading="lazy"
+                  className="w-full max-w-sm mx-auto rounded-xl object-cover mb-6"
+                />
+
+                
               </div>
             </Link>
           </div>

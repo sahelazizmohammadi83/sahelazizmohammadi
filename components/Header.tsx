@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { FaBars, FaLaptop, FaDesktop, FaMobileAlt, FaChartBar, FaMoneyBillWave, FaHome } from "react-icons/fa";
+import { FaBars, FaLaptop, FaDesktop, FaMobileAlt, FaChartBar, FaMoneyBillWave, FaHome ,FaBook} from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -89,6 +89,13 @@ export default function Header() {
       className="flex items-center gap-[0.2cm] text-[#2ecc71] hover:text-[#55efc4] transition-colors"
     >
       <FaMoneyBillWave /> راهنمای خرید
+    </Link>
+    <Link
+      href="/tabliq"
+      onClick={() => setMenuOpen(false)}
+      className="flex items-center gap-[0.2cm] text-[#f50000] hover:text-[#ff7300] transition-colors"
+    >
+      <FaBook /> رزرو تبلیغ
     </Link>
   </div>
 )}

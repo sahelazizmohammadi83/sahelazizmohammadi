@@ -16,7 +16,7 @@ export default function Home() {
           خوش آمدید
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-[#334155]">
-          دنیایی از اطلاعات گوشی، لپ‌تاپ و کامپیوتر اینجاست.
+          دنیایی از اطلاعات گوشی، لپ‌تاپ و راهکارهای روزمره اینجاست.
         </p>
       </section>
 
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="relative w-full aspect-square">
               <Image src="/images/phonss.jpg" alt="موبایل" fill className="absolute top-0 left-0 w-full h-full object-cover" />
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#2563eb] mt-2">موبایل معرفی  میشه</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[rgb(17,92,255)] mt-2">معرفی موبایل</h2>
             <p className="text-sm sm:text-base md:text-lg text-[#334155] mb-4">جدیدترین مدل‌ها و بررسی تخصصی گوشی‌ها</p>
           </div>
         </Link>
@@ -35,9 +35,9 @@ export default function Home() {
         <Link href="/moqayese-phon" className="w-[14rem] sm:w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[24rem]">
           <div className="bg-white border border-[#93c5fd] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-center">
             <div className="relative w-full aspect-square">
-              <Image src="/images/phonss.jpg" alt="موبایل" fill className="absolute top-0 left-0 w-full h-full object-cover" />
+              <Image src="/images/phon-vs.jpg" alt="موبایل" fill className="absolute top-0 left-0 w-full h-full object-cover" />
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#2563eb] mt-2">مقایسه ی موبایل ها</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#d940ff] mt-2">مقایسه ی موبایل </h2>
             <p className="text-sm sm:text-base md:text-lg text-[#334155] mb-4"> بررسی تخصصی گوشی‌ها</p>
           </div>
         </Link>
@@ -45,9 +45,9 @@ export default function Home() {
          <Link href="/rahnama-phon" className="w-[14rem] sm:w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[24rem]">
           <div className="bg-white border border-[#a5b4fc] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-center">
             <div className="relative w-full aspect-square">
-              <Image src="/images/laptopss.jpg" alt="راهنمای خرید" fill className="absolute top-0 left-0 w-full h-full object-cover" />
+              <Image src="/images/phon-mq.jpg" alt="راهنمای خرید" fill className="absolute top-0 left-0 w-full h-full object-cover" />
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#4f46e5] mt-2">راهنمای خرید  موبایل</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#2fcf20] mt-2">راهنمای خرید  موبایل</h2>
             <p className="text-sm sm:text-base md:text-lg text-[#334155] mb-4">راهنمای انتخاب بهترین  موبایل</p>
           </div>
         </Link>
@@ -57,7 +57,7 @@ export default function Home() {
             <div className="relative w-full aspect-square">
               <Image src="/images/laptopss.jpg" alt="لپ‌تاپ" fill className="absolute top-0 left-0 w-full h-full object-cover" />
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#4f46e5] mt-2">لپ‌تاپ</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[rgb(17,92,255)] mt-2">معرفی لپ تاپ</h2>
             <p className="text-sm sm:text-base md:text-lg text-[#334155] mb-4">راهنمای انتخاب بهترین لپ‌تاپ‌ها</p>
           </div>
         </Link>
@@ -65,30 +65,30 @@ export default function Home() {
         <Link href="/moqayese-laptop" className="w-[14rem] sm:w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[24rem]">
           <div className="bg-white border border-[#a5b4fc] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-center">
             <div className="relative w-full aspect-square">
-              <Image src="/images/laptopss.jpg" alt="لپ‌تاپ" fill className="absolute top-0 left-0 w-full h-full object-cover" />
+              <Image src="/images/hp-v-as.jpg" alt="لپ‌تاپ" fill className="absolute top-0 left-0 w-full h-full object-cover" />
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#4f46e5] mt-2">مقایسه لپ تاپ</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#d940ff] mt-2">مقایسه لپ تاپ</h2>
             <p className="text-sm sm:text-base md:text-lg text-[#334155] mb-4"> انتخاب بهترین لپ‌تاپ‌ها</p>
           </div>
         </Link>
 
-        <Link href="/rahnama-laptop-laptop" className="w-[14rem] sm:w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[24rem]">
+        <Link href="/rahnama-laptop" className="w-[14rem] sm:w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[24rem]">
           <div className="bg-white border border-[#a5b4fc] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-center">
             <div className="relative w-full aspect-square">
-              <Image src="/images/laptopss.jpg" alt="لپ‌تاپ" fill className="absolute top-0 left-0 w-full h-full object-cover" />
+              <Image src="/images/laptop-rrah.jpg" alt="لپ‌تاپ" fill className="absolute top-0 left-0 w-full h-full object-cover" />
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#4f46e5] mt-2">راهنمای خرید  لپ تاپ</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#2fcf20] mt-2">راهنمای خرید  لپ تاپ</h2>
             <p className="text-sm sm:text-base md:text-lg text-[#334155] mb-4">راهنمای انتخاب بهترین لپ‌تاپ‌ها</p>
           </div>
         </Link>
 
 
         <Link href="/computer" className="w-[14rem] sm:w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[24rem]">
-          <div className="bg-white border border-[#c084fc] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-center">
+          <div className="bg-white border border-[#a5b4fc] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-center">
             <div className="relative w-full aspect-square">
-              <Image src="/images/computers.jpg" alt="کامپیوتر" fill className="absolute top-0 left-0 w-full h-full object-cover" />
+              <Image src="/images/abzarha.jpg" alt="کامپیوتر" fill className="absolute top-0 left-0 w-full h-full object-cover" />
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#9333ea] mt-2">راهکارهای روزمره</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[rgb(255,17,17)] mt-2">راهکارهای روزمره</h2>
             <p className="text-sm sm:text-base md:text-lg text-[#334155] mb-4"> مشکلات روزمرتو با گوشی  و لپ تاپت حل کن</p>
             
           </div>
